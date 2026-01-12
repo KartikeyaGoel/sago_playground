@@ -19,7 +19,7 @@ tavily_toolset = MCPToolset(
 
 research_agent = LlmAgent(
     name="research_agent",
-    model="gemini-2.5-flash",
+    model="gemini-3-pro-preview",
     instruction=agent_instructions.RESEARCH_AGENT_INSTRUCTION,
     tools=[tavily_toolset],  # Pass MCPToolset directly, not .get_tools()
     description="Research agent that finds unfiltered truth about VC funds using Tavily search"
@@ -30,7 +30,7 @@ research_tool = AgentTool(agent=research_agent)
     
 root_agent = LlmAgent(
     name="lp_briefing_orchestrator",
-    model="gemini-2.5-pro",
+    model="gemini-3-pro-preview",
     instruction=agent_instructions.ORCHESTRATOR_AGENT_INSTRUCTION,
     tools=[research_tool],
     description="Portfolio manager that synthesizes research into LP-specific briefings"
