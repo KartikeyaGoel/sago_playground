@@ -1,0 +1,11 @@
+# Tavily Python SDK for advanced search capabilities
+tavily-python>=0.7.0
+
+# Google Agent Development Kit
+google-adk>=0.3.0
+
+# Async support
+aiohttp>=3.9.0
+
+# Type hints
+typing-extensions>=4.9.0
