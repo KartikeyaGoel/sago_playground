@@ -118,8 +118,10 @@ Key Departures table: name, former role, departure date, where they went
 Team red/yellow flags
 
 ## 4. Portfolio & Track Record
-Material bets, investment style, notable winners with specific numbers (entry, exit, MOIC)
-Strategy evolution, thesis adherence
+- Material bets and notable winners with specific numbers (entry, exit, MOIC) - make sure to add specific numbers for each company like what were the entry valuation, current valuation, and the MOIC.
+- Companies of Interest (portfolio companies matching the user's investment thesis provided below)
+- Anomalies (portfolio companies diverging from the fund's own stated thesis, style drift, opportunistic bets)
+- Strategy evolution, thesis adherence
 
 ## 5. People to Speak With
 Ex-team members, portfolio founders (winners and losers), co-investors, former LPs

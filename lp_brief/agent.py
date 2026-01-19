@@ -8,6 +8,7 @@ including web search, deep research, content extraction, site mapping, and crawl
 # Load environment variables from .env file BEFORE other imports
 from pathlib import Path
 from dotenv import load_dotenv
+import yaml
 
 # Load .env from the lp_brief directory
 env_path = Path(__file__).parent / ".env"
@@ -17,9 +18,31 @@ from google.adk.agents import LlmAgent
 from google.adk.planners import BuiltInPlanner
 from google.genai import types
 
-from lp_brief import agent_instructions
-from lp_brief.tavily_toolbox import TAVILY_TOOLS
-from lp_brief.pdf_formatter import format_brief_to_pdf
+from lp_brief.core import instructions
+from lp_brief.tools import TAVILY_TOOLS, format_brief_to_pdf
+
+
+def _load_lp_thesis() -> str:
+    """Load the LP's investment thesis from thesis.yaml and format for injection."""
+    thesis_path = Path(__file__).parent / "core" / "thesis.yaml"
+    if not thesis_path.exists():
+        return ""
+    
+    with open(thesis_path, "r") as f:
+        thesis_data = yaml.safe_load(f)
+    
+    # Format the thesis as readable text for the agent
+    thesis_text = "\n\n## LP Investment Thesis\n\n"
+    thesis_text += "Use this thesis to identify Companies of Interest in the fund's portfolio.\n\n"
+    thesis_text += "```yaml\n"
+    thesis_text += yaml.dump(thesis_data, default_flow_style=False, allow_unicode=True, width=100)
+    thesis_text += "```\n"
+    
+    return thesis_text
+
+
+# Build complete instruction with LP thesis appended
+_full_instruction = instructions.LP_BRIEFING_AGENT_INSTRUCTION + _load_lp_thesis()
 
 # Enable thinking/reasoning for deeper analysis
 thinking_planner = BuiltInPlanner(
@@ -33,7 +56,7 @@ thinking_planner = BuiltInPlanner(
 root_agent = LlmAgent(
     name="lp_briefing_agent",
     model="gemini-3-pro-preview",
-    instruction=agent_instructions.LP_BRIEFING_AGENT_INSTRUCTION,
+    instruction=_full_instruction,
     tools=TAVILY_TOOLS + [format_brief_to_pdf],
     description="LP briefing agent that researches VC funds and synthesizes findings into branded PDF reports",
     planner=thinking_planner,

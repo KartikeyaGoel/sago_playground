@@ -1,0 +1,80 @@
+version: "2025-07-29"
+thesis:
+  fund: >
+    Sentinel Global — a multi‑stage venture firm backing enterprise technology
+    founders reshaping the systems that underpin global markets. We bridge the
+    gap between innovators and adopters and help teams ship scalable,
+    defensible, adoption‑ready platforms built for mission‑critical performance,
+    regulatory readiness and global deployment.
+
+  mandate_buyer: >
+    Global enterprise and institutional adopters (North America, Europe, Asia,
+    and select emerging markets). Prioritize platforms/infrastructure with
+    compliance‑by‑design and clear pathways to production pilots, integrations,
+    and durable distribution within complex systems.
+
+  stages_preferred:
+    - Series A
+    - Series B
+  stages_considered:
+    - Select Seed
+    - Growth (case‑by‑case)
+
+  focus_areas:
+    Enterprise & AI:
+      - Distributed cloud infrastructure; stream processing and real‑time analytics
+      - Privacy, security, and disinformation‑risk mitigation for AI
+      - Post‑quantum cryptography and fully homomorphic encryption applications
+      - Enterprise agents and AI copilots for finance, operations, IT
+
+    "The Finternet":
+      - Programmable money, stablecoins and tokenized real‑world assets (RWA)
+      - Agentic finance rails and workflow automation for institutions
+      - Blockchain & decentralized network infrastructure (wallets, key mgmt, MPC, account abstraction)
+      - Compliance & forensics (KYC/KYA, proof of personhood) and institutional adoption infra
+      - Open social networks for enterprise/financial use cases
+
+    Interoperable Commerce:
+      - Supply‑chain & logistics optimization; last‑mile and routing intelligence
+      - AI‑enabled factory/operations optimization and quality
+      - Bot‑to‑bot transactions and secure, auditable data exchange
+      - Advanced data for global operations and cross‑system interoperability
+
+  adoption_enablement:  # Sentinel Labs & adopter bridge
+    - Research‑led theses via Sentinel Labs and advisory council; insight‑driven GTM
+    - Access to enterprise buyer networks for design partners and pilots
+    - Readiness reviews: security, compliance, observability, SLAs, data residency
+    - Playbooks for integrations (ERP, core banking, supply‑chain, identity), and co‑selling
+
+  positive_signals:
+    - Clear regulated‑industry buyer; security/compliance central to product
+    - Defensibility via cryptography, proprietary data/graphs, or infrastructure lock‑in
+    - Capital‑efficient GTM; credible path to > $50M ARR with mission‑critical deployments
+    - Evidence of adopter traction: pilots, LOIs, signed MSAs, integration roadmaps
+
+  negative_signals:
+    - Pure consumer crypto/speculation, adtech, gaming, creator‑only focus
+    - No regulatory path, weak data advantage, or unclear enterprise model
+    - Long‑cycle research with no buyer urgency or production path
+
+  keywords_to_favor:
+    - zero‑knowledge
+    - ZK proving
+    - MPC
+    - account abstraction
+    - blockchain analytics and compliance
+    - enterprise wallet
+    - privacy‑preserving compute
+    - ERP and finance automation
+    - streaming and real‑time analytics
+    - distributed cloud
+    - post‑quantum
+    - fully homomorphic encryption
+    - programmable money
+    - tokenized real‑world assets
+    - KYC, KYA, proof of personhood
+    - open social networks
+    - supply‑chain agents
+    - routing optimization
+    - factory optimization
+    - secure data exchange

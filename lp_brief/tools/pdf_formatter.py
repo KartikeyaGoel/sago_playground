@@ -27,12 +27,13 @@ from weasyprint import HTML
 
 # Resolve paths relative to this module
 MODULE_DIR = Path(__file__).parent
-ASSETS_DIR = MODULE_DIR / "assets"
-TEMPLATE_DIR = MODULE_DIR
-OUTPUT_DIR = MODULE_DIR / "output"
+PACKAGE_DIR = MODULE_DIR.parent
+STATIC_DIR = PACKAGE_DIR / "static"
+TEMPLATE_DIR = PACKAGE_DIR / "templates"
+OUTPUT_DIR = PACKAGE_DIR / "output"
 
 # Default logo path
-LOGO_PATH = ASSETS_DIR / "sago_header.png"
+LOGO_PATH = STATIC_DIR / "sago_header.png"
 
 
 def _extract_fund_name(brief_content: str) -> Optional[str]:
@@ -174,10 +175,10 @@ def format_brief_to_pdf(
     output_path = str(Path(output_path).absolute())
     
     # Generate PDF using WeasyPrint
-    # Set base_url to assets directory so images resolve correctly
+    # Set base_url to static directory so images resolve correctly
     HTML(
         string=html,
-        base_url=str(ASSETS_DIR.absolute())
+        base_url=str(STATIC_DIR.absolute())
     ).write_pdf(output_path)
     
     return output_path
