@@ -44,12 +44,12 @@ def _load_lp_thesis() -> str:
 # Build complete instruction with LP thesis appended
 _full_instruction = instructions.LP_BRIEFING_AGENT_INSTRUCTION + _load_lp_thesis()
 
-# Enable thinking/reasoning for deeper analysis
-thinking_planner = BuiltInPlanner(
-    thinking_config=types.ThinkingConfig(
-        include_thoughts=True  # Shows the model's internal reasoning
-    )
-)
+# Note: Thinking planner disabled - was causing model to plan without acting
+# thinking_planner = BuiltInPlanner(
+#     thinking_config=types.ThinkingConfig(
+#         include_thoughts=True
+#     )
+# )
 
 # Single LP Briefing Agent - handles both research and synthesis
 # Tavily tools for research + PDF formatter for output
@@ -59,5 +59,4 @@ root_agent = LlmAgent(
     instruction=_full_instruction,
     tools=TAVILY_TOOLS + [format_brief_to_pdf],
     description="LP briefing agent that researches VC funds and synthesizes findings into branded PDF reports",
-    planner=thinking_planner,
 )
