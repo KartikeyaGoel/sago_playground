@@ -1,0 +1,114 @@
+version: "2025-07-29"
+thesis:
+  fund: >
+    Brunei Investment Agency (BIA) — the sovereign wealth fund of Brunei,
+    established in 1983 to manage and grow the country's general reserve fund and
+    external assets. BIA operates under the Ministry of Finance and Economy of Brunei
+    and invests globally across multiple asset classes including public equities,
+    fixed income, real estate, private equity, and strategic venture/growth
+    investments. As a sovereign wealth fund, BIA focuses on long-term capital
+    preservation, global diversification, and strategic participation in large
+    institutional investments rather than early-stage startup bets.
+
+  mandate_buyer: >
+    Global institutional adopters and strategic partners across North America,
+    Europe, Asia, and emerging markets. BIA prioritizes large strategic stakes,
+    co-investments with established partners, and long-term holdings that align
+    with its mandate to preserve and grow national reserves while diversifying
+    away from oil/gas dependence. Investments typically involve significant
+    capital allocations in established companies, financial institutions, real
+    estate assets, and selective participation in growth financings.
+
+  stages_preferred:
+    - Growth / Later Stage
+    - Private Equity
+    - Strategic Co-investments
+  stages_considered:
+    - Select Venture Rounds (large institutional rounds)
+    - Public Market Investments
+    - Real Estate & Hospitality Acquisitions
+
+  focus_areas:
+    Luxury Real Estate & Hospitality:
+      - Luxury hotel portfolios and iconic properties
+      - High-end real estate assets globally
+      - Hospitality and tourism infrastructure
+      - Prime commercial real estate holdings
+
+    Financial & Strategic Holdings:
+      - Major stakes in financial institutions and banks
+      - Hedge fund partnerships and equity positions
+      - Investment management firms and securities groups
+      - Strategic financial services holdings
+
+    Private Equity & Venture / Growth:
+      - Large growth financings and institutional rounds
+      - Private equity stakes in established companies
+      - Selective venture co-investments in technology companies
+      - Strategic positions in listed VC firms and investment vehicles
+
+    Technology & Innovation:
+      - Autonomous vehicles and AI technology
+      - Food tech and direct-to-consumer platforms
+      - FinTech and digital credit services
+      - Enterprise technology and deep tech investments
+
+    Public Markets & Diversification:
+      - Global public equities and blue-chip stocks
+      - Fixed income and currency holdings
+      - Diversified global market exposure
+      - Long-term strategic equity positions
+
+  adoption_enablement:  # Value creation and support
+    - Long-term strategic capital as sovereign wealth fund investor
+    - Participation in large funding rounds and co-investments with established partners
+    - Global network access across multiple geographies and asset classes
+    - Capital preservation focus with patient, long-term investment horizon
+    - Strategic positioning in financial institutions and investment firms
+    - Diversified portfolio approach reducing concentration risk
+
+  positive_signals:
+    - Large institutional investment opportunities with significant capital requirements
+    - Established companies or late-stage growth companies with proven business models
+    - Strategic co-investment opportunities with reputable partners
+    - Long-term value creation potential aligned with capital preservation mandate
+    - Global diversification benefits across asset classes and geographies
+    - Companies in technology, finance, real estate, or hospitality sectors
+    - Opportunities for strategic stakes or meaningful equity positions
+    - Alignment with long-term macro themes (diversification, innovation, global exposure)
+
+  negative_signals:
+    - Early-stage startups requiring hands-on operational support or mentorship
+    - Small ticket sizes or seed-stage investments
+    - Companies requiring frequent monitoring or active portfolio management
+    - High-risk, speculative investments inconsistent with reserve management mandate
+    - Limited strategic value or diversification benefits
+    - Companies without clear path to long-term capital preservation
+    - Investments requiring public disclosure or transparency inconsistent with BIA's approach
+
+  keywords_to_favor:
+    - sovereign wealth fund
+    - reserves
+    - diversification
+    - global investments
+    - public equities
+    - real estate
+    - luxury hospitality
+    - alternative assets
+    - long-term
+    - strategic stakes
+    - co-investments
+    - private equity
+    - institutional rounds
+    - financial institutions
+    - hedge funds
+    - capital preservation
+    - growth financing
+    - autonomous vehicles
+    - food tech
+    - FinTech
+    - digital credit
+    - technology investments
+    - fixed income
+    - blue-chip
+    - strategic holdings
